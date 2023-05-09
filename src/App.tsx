@@ -69,8 +69,23 @@ function App() {
       y: yValues,
       z: zValues,
       type: "heatmap",
+      xgap: -1,
+      ygap: -1,
+      showscale: false,
+      colorscale: [
+        [0, "#0B0B0B"],
+        [1, "#0B0B0B"],
+      ],
+    },
+    {
+      x: xValues,
+      y: yValues,
+      z: zValues,
+      type: "heatmap",
       colorscale: colorscaleValue,
       showscale: false,
+      xgap: 2,
+      ygap: 2,
     },
   ];
 
@@ -83,11 +98,20 @@ function App() {
       ticks: "",
       side: "top",
       showgrid: false,
+      showline: true,
+      linecolor: "#0B0B0B",
+      linewidth: 2,
+      mirror: true,
     },
     yaxis: {
       ticks: "",
-      ticksuffix: " ",
-      visible: false,
+      ticksuffix: "",
+      showticklabels: false,
+      showgrid: false,
+      showline: true,
+      linecolor: "#0B0B0B",
+      linewidth: 2,
+      mirror: true,
     },
   };
 
